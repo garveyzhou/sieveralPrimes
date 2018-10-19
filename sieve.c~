@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int sieve(int target){
+  if(target == 1){
+    return 2;
+  }
+  int counter = 1;
+  int i = 3;
+  int length = target*ln(target)*1.15;
+  int arr [length];
+  while( i < length){
+    if (arr[i] == 0){
+      int x = i ;
+      counter ++;
+      if(counter == target){
+	return arr[i];
+      }
+      while (x < length){
+	if(ary[x] % 2 == 0){
+	  arr[x] = 1;
+	  x += 2
+	}
+      }
+    }
+    i += 2;
+  }
+      
