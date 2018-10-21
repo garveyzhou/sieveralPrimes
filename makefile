@@ -1,4 +1,4 @@
-default: sieve.o driver.o
+all: sieve.o driver.o
 	gcc -o sieve.o driver.o
 sieve.o: sieve.c sieve.h
 	gcc -c sieve.c -lm

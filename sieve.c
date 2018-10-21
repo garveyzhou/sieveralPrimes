@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
+
 int sieve(int target){
   if(target == 1){
     return 2;
@@ -9,7 +10,7 @@ int sieve(int target){
   int counter = 1;
   int i = 3;
   int length =(int)target*log(target)*1.15;
-  char  arr [length];
+  int *arr = calloc(sizeOf(int),length);
   while(counter < target){
     if (arr[i] == 0){
       int x = i ;
@@ -26,4 +27,9 @@ int sieve(int target){
   return i;
 }
 
+int main(){
+  printf("the 25th prime number: %d \n",sieve(25));
+  
+  return 0;
+}
       
