@@ -19,9 +19,7 @@ int sieve(int target){
 	return i;
       }
       while (x < length){
-	if(x % i == 0){
-	  arr[x] = 1;
-	}
+	arr[x] = 1;
 	x+= i;
       }
     }
