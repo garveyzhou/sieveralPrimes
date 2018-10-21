@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include "sieve.h"
 
 int sieve(int target){
   if(target == 1){
