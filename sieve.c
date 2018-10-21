@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-
+#include "sieve.h"
 
 int sieve(int target){
   if(target == 1){
@@ -30,10 +30,4 @@ int sieve(int target){
   free(arr);
 }
 
-int main(){
-  
-  printf("the 25th prime number: %d \n",sieve(25));
-  
-  return 0;
-}
       
