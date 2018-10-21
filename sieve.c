@@ -27,7 +27,4 @@ int sieve(int target){
   return i;
 }
 
-int main(){
-  printf("%d\n",sieve(5));
-}
       
