@@ -22,7 +22,7 @@ int sieve(int target){
 	if(x % i == 0){
 	  arr[x] = 1;
 	}
-	x+= 2;
+	x+= i;
       }
     }
     i += 2;
