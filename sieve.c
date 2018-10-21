@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include "sieve.h"
 
 int sieve(int target){
   if(target == 1){
@@ -8,8 +9,8 @@ int sieve(int target){
   }
   int counter = 1;
   int i = 3;
-  int length = target*log(target)*1.15;
-  int arr [length] = {0};
+  int length =(int)target*log(target)*1.15;
+  char  arr [length];
   while(counter < target){
     if (arr[i] == 0){
       int x = i ;
